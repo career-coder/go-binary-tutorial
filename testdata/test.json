@@ -1,0 +1,10 @@
+{
+  "test": {
+    "test2": {
+      "val": 1,
+      "vallist": [
+        "list of things"
+      ]
+    }
+  }
+}
