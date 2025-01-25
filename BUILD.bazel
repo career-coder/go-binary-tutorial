@@ -11,7 +11,7 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/career-coder/go-binary-tutorial",
     visibility = ["//visibility:private"],
-    deps = ["@in_gopkg_yaml_v3//:go_default_library"],
+    deps = ["@in_gopkg_yaml_v3//:yaml_v3"],
 )
 
 go_binary(
@@ -26,12 +26,7 @@ go_test(
     data = glob(["testdata/**"]),
     embed = [":go-binary-tutorial_lib"],
     deps = [
-        "@com_github_stretchr_testify//assert:go_default_library",
-        "@com_github_stretchr_testify//require:go_default_library",
+        "@com_github_stretchr_testify//assert",
+        "@com_github_stretchr_testify//require",
     ],
-)
-
-native_binary(
-    name = "prebuilt",
-    src = "go-binary-tutorial_x86_darwin",
 )

@@ -1,5 +1,5 @@
 MODULE.bazel.lock
 bazel-bin
-bazel-binarytutorial
+bazel-go-binary-tutorial
 bazel-out
 bazel-testlogs
